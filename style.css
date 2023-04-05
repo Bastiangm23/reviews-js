@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -12,19 +15,30 @@ body{
 }
 
 .container{
-    width: 650px;
-    border: solid 1px blue;
+    width: 40%;
+    overflow-x: hidden;
+    /* border: solid 1px blue; */
 }
 
 .header{
-    margin-bottom: 100px;
     display: flex;
     justify-content: center;
-    border: solid 1px black;
+    /* border: solid 1px black; */
+    color: #003B5C;
+    font-size: x-large;
+    margin-bottom: 50px;
 }
 
+.reviews-container{
+    width: 300%;
+    display: flex;
+}
+
+
 .review{
-    border: solid 1px red;
+    /* border: solid 1px red; */
+    border-radius: 15px;
+    /* box-shadow: 5px 5px 5px 5px gray; */
     padding: 50px;
 }
 
@@ -32,24 +46,62 @@ body{
     text-align: center;
     display: grid;
     place-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .profile-photo{
     width: 150px;
     height: 150px;
-    border: solid 1px green;
+    /* border: solid 1px green; */
     border-radius: 50%;
+    margin-bottom: 15px;
+
+    background-image: url("./img/profile.jpeg");
+    background-size: cover;
+    background-position-x: 30%;
+    background-repeat: no-repeat;
 }
 
-.buttons{
+.nombre{
+    font-weight: 700;
+    color: #003B5C;
+}
+
+.cargo{
+    color: #00B3FF;
+}
+
+.buttons-div{
+    position: relative;
     display: flex;
     justify-content: center;
-    
+    padding-top: 10px;   
+}
+
+.buttons-div>button{
+    background-color: transparent;
+    border: transparent;
+}
+
+
+#btn-anterior{
+    margin-right: 10px;
+}
+
+#btn-siguiente{
+    margin-left: 10px;
 }
 
 .bottom-button{
     display: flex;
     justify-content: center;
     padding-top: 10px;
+}
+
+.bottom-button>button{
+    width: 100px;
+    color: #00B3FF;
+    border-color: #00B3FF;
+    border-radius: 5px;
+    background-color: #DEFAFF;
 }
